@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.spellingbee.GameController">
+   <Button mnemonicParsing="false" onAction="#onGoHome" text="Back" />
+   <Text fx:id="scoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="Score: 0" textAlignment="RIGHT">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Text>
+   <TextField fx:id="wordInput" onKeyReleased="#onWordComplete">
+      <font>
+         <Font size="36.0" />
+      </font>
+   </TextField>
+   <TilePane alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+      <Button mnemonicParsing="false" onAction="#onLetterClicked" style="-fx-background-color: rgb(250, 204, 21);" text="S">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onLetterClicked" style="-fx-background-color: rgb(250, 204, 21);" text="L">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onLetterClicked" style="-fx-background-color: rgb(250, 204, 21);" text="O">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onLetterClicked" style="-fx-background-color: rgb(250, 204, 21);" text="P">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onLetterClicked" style="-fx-background-color: rgb(250, 204, 21);" text="E">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+   </TilePane>
+   <ListView fx:id="wordsFound" minHeight="400.0" prefHeight="400.0" prefWidth="200.0" style="-fx-font: 24 arial;" />
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</VBox>
